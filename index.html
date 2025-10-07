@@ -6,9 +6,11 @@
     <title>Open PDFs</title>
     <style>
       body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; background:#f6f8fb; }
-      .card { background:white; padding:28px; border-radius:12px; box-shadow:0 6px 20px rgba(28,40,50,0.08); text-align:center; }
+      .card { background:white; padding:28px; border-radius:12px; box-shadow:0 6px 20px rgba(28,40,50,0.08); text-align:center; max-width:520px; width:92%; }
+      .logo { display:block; margin:0 auto 14px auto; max-width:180px; height:auto; border-radius:8px; cursor:pointer; transition:transform .18s ease, box-shadow .18s ease; }
+      .logo:hover { transform:translateY(-3px) scale(1.02); box-shadow:0 6px 20px rgba(37,99,235,0.12); }
       h1 { margin:0 0 16px 0; font-size:20px; }
-      .buttons { display:flex; gap:12px; justify-content:center; }
+      .buttons { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:10px }
       a.button { text-decoration:none; }
       button { background:#2563eb; color:white; border:0; padding:10px 18px; border-radius:8px; cursor:pointer; font-size:14px; }
       button.secondary { background:#6b7280; }
@@ -17,13 +19,18 @@
   </head>
   <body>
     <div class="card">
-      <h1>Open PDF</h1>
+      <a href="CERTIFICATE.pdf" target="_blank" rel="noopener noreferrer" title="Open Certificate">
+        <img src="rablo_logo.jpg" alt="Rablo Logo" class="logo" />
+      </a>
       <div class="buttons">
         <a class="button" href="LOR-YUSUF.pdf" target="_blank" rel="noopener noreferrer">
           <button type="button">Open LOR (LOR-YUSUF.pdf)</button>
         </a>
         <a class="button" href="CERTIFICATE.pdf" target="_blank" rel="noopener noreferrer">
           <button type="button" class="secondary">Open Certificate (CERTIFICATE.pdf)</button>
+        </a>
+        <a class="button" href="offer letter.pdf" target="_blank" rel="noopener noreferrer">
+          <button type="button">Offer letter (offer letter.pdf)</button>
         </a>
       </div>
       <footer>All the PDFs provided here are original.
